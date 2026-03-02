@@ -10,7 +10,14 @@ from labs.lab_1.lab_1b import simple_calculator
 def test_addition():
     assert simple_calculator("add", 5, 3) == 8          # Test for positive numbers
     assert simple_calculator("add", -2, 2) == 0         # Test for negative and positive number
-    assert simple_calculator("add", 0, 0) == 0          # Test for zero addition
+    assert simple_calculator("add", 0, 0) == 0         # Test for zero addition
+
+'''
+def test_addition_with_floats():
+    assert simple_calculator("add", 2.5, 3.5) == 6.0   # Test for float addition
+    assert simple_calculator("add", -1.5, -2.5) == -4.0 # Test for negative float addition
+'''
+
 
 def test_subtraction():
     assert simple_calculator("subtract", 5, 3) == 2     # Test for positive numbers
